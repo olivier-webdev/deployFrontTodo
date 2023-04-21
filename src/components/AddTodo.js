@@ -13,15 +13,18 @@ export default function AddTodo({ addTodo }) {
   async function addTodoToDatabase() {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:8000/addTodo", {
-        method: "POST",
-        body: JSON.stringify({
-          content: value,
-          done: false,
-          edit: false,
-        }),
-        headers: { "Content-Type": "application/json" },
-      });
+      const response = await fetch(
+        "https://todolist-back.onrender.com/addTodo",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            content: value,
+            done: false,
+            edit: false,
+          }),
+          headers: { "Content-Type": "application/json" },
+        }
+      );
       if (response.ok) {
         const todo = await response.json();
         console.log(todo);

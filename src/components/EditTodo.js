@@ -5,13 +5,16 @@ export default function EditTodo({ todo, updateTodo }) {
 
   async function modifyTodo(newTodo) {
     try {
-      const response = await fetch("http://localhost:8000/modifyTodo", {
-        method: "POST",
-        body: JSON.stringify(newTodo),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://todolist-back.onrender.com/modifyTodo",
+        {
+          method: "POST",
+          body: JSON.stringify(newTodo),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       if (response.ok) {
         const newTodo = await response.json();
         console.log({ newTodo });
