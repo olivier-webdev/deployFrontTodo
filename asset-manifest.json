@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/deployFrontTodo/static/css/main.2b0f143a.css",
+    "main.js": "/deployFrontTodo/static/js/main.5877ebb0.js",
+    "static/js/787.9e0c1f39.chunk.js": "/deployFrontTodo/static/js/787.9e0c1f39.chunk.js",
+    "index.html": "/deployFrontTodo/index.html",
+    "main.2b0f143a.css.map": "/deployFrontTodo/static/css/main.2b0f143a.css.map",
+    "main.5877ebb0.js.map": "/deployFrontTodo/static/js/main.5877ebb0.js.map",
+    "787.9e0c1f39.chunk.js.map": "/deployFrontTodo/static/js/787.9e0c1f39.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b0f143a.css",
+    "static/js/main.5877ebb0.js"
+  ]
+}
